@@ -1,0 +1,128 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ max-width: 1440px;
+ margin: 5%;
+ margin-top: 2%;
+ overflow: hidden;
+
+
+
+}
+
+nav{
+ 
+ display: flex;
+ justify-content: space-between;
+ align-items:  center;
+ padding: 0 5%;
+}
+
+.nav-bar ul{
+ display: flex;
+ list-style: none;
+ align-items: center;
+ 
+ 
+
+}
+
+ul > li{
+ padding: 2rem;
+ font-weight: 600 ;
+ font-size: 1.2rem;
+ 
+}
+
+ul li:first-child{
+ color: green;
+ font-family:sans-serif;
+}
+
+main{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+}
+
+main section{
+ width: 50%;
+}
+
+.left-section{
+ margin-left: 5%;
+ position: relative;
+ bottom: 100px;
+}
+
+.top-angle{
+ width: 25px;
+}
+
+.left-section h1{
+ font-size: 5rem;
+ font-family: sans-serif;
+}
+
+.left-section p{
+ color: #808080;
+ font-size: 18px;
+ margin: 20px 0;
+ font-family: sans-serif;
+ 
+}
+
+.bottom-angle{
+ width: 25px;
+ position: absolute;
+ right: 25px;
+}
+
+.button{
+ color: white;
+ background-color: green;
+ padding: 15px 40px;
+ border: none;
+ border-radius: 40px;
+ font-size: 25px;
+ 
+}
+
+.mouse-img{
+ position: absolute;
+ right: -30px
+}
+
+.steth-img{
+ position: absolute;
+ width: 90%;
+ bottom: -60px;
+ left: 210px;
+ 
+}
+
+.right-section{
+ position: relative;
+}
+
+
+.greenbox, .yellowbox, .doctor{
+ position: absolute;
+ bottom: -290px;
+ right: -50px;
+ width: 75%;
+}
+
+.greenbox{
+ right: -30px;
+ bottom: -260px;
+}
+
+.yellowbox{
+ right: -70px;
+}
