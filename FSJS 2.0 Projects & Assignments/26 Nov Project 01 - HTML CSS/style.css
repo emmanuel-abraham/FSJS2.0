@@ -45,7 +45,8 @@ main{
 }
 
 .leftmain h1{
-    font-size: 67px;
+    width: 110%;
+    font-size: 55px;
     font-family: sans-serif;
 }
 
