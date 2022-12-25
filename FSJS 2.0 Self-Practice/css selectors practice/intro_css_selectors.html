@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS Selectors</title>
+<style>
+
+/* Universal Selector */
+*{
+ background-color: #03203C;
+ color: #CAD5E2;
+ text-align: center;
+}
+
+/* Individual Selector */
+h2{
+ color: #03C6C7;
+}
+
+/* Class Selector */
+.fresh-j{
+ color: #DDD101;
+ background-color: #8D3DAF;
+ padding: 6px;
+ }
+ .jamba-j{
+    background-color: #6A1B4D;
+    text-align: left;
+  }
+ /* ID Selector */
+ #super-j{
+  color: #E07C24;
+ }
+
+ /* AND Selector Chained */
+  
+ .jamba-j.green-c {
+   background-color: #00AC61;
+   text-align: left;
+  }
+
+  
+
+  /* Combined Selector */
+
+  p,li{
+    text-align: left;
+  }
+
+  /* Inside an Element Selector */
+
+  div ul li{
+    background-color: #5A20CB;
+  }
+
+/* Direct Child */
+div > li{
+  background-color: #242B2E;
+}
+
+/* Sibling Selector */
+
+.sibling + li{
+  background-color: #120E43;
+}
+
+/* Pseudo Selectors */
+
+/* Pseudo Class */
+
+.just-a-l:active{
+  width: 10em;
+    height: 5ex;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Pseudo Element */
+
+.bex-tool:hover::before{
+        content: '';
+        display: block;
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        background-color: #E07C24;
+        
+      }
+
+      #box-large{
+        background-color: #CAD5E2;
+        color: #120E43;
+
+      }
+
+      #box-large:active{
+        width: 500px;
+        font-size: 50px;
+
+
+      }
+
+
+li:nth-child(even){
+  color: #00AC61;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+ <h1 class="bex-tool" id="super-j">Jamba Juice </h1>
+ <h2>Premium Juice Shop In Delhi</h2>
+ <h3 class="fresh-j">Customize Your Own Juice (CYOJ)</h3>
+ <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, exercitationem id corporis dolorum necessitatibus eum, vitae possimus natus consequuntur deleniti aliquid earum nemo beatae amet libero, ratione impedit adipisci mollitia laboriosam explicabo minus quibusdam voluptatibus quaerat? Cum ipsa ducimus inventore dolores neque quo modi pariatur eum, maiores dolore reiciendis accusantium autem doloremque veritatis consectetur hic unde tempore itaque illo totam saepe ad nihil. Assumenda aliquid deserunt impedit tenetur fugiat non, architecto dolorem quisquam libero maiores aliquam unde repellendus excepturi officia, mollitia praesentium. Ullam veniam nostrum adipisci error dolores sequi, assumenda, blanditiis, est reiciendis eum quidem vel quaerat suscipit dicta porro esse! Sequi, exercitationem amet perferendis alias delectus vitae id temporibus maxime error, tenetur, natus nisi. Natus, animi, libero beatae ea itaque dignissimos fugit sequi dolor error veritatis perspiciatis quaerat molestias eius reiciendis aperiam tempora fugiat, recusandae eveniet illum! Exercitationem, voluptatem aspernatur nihil culpa debitis reiciendis fugit libero amet architecto illum.</p> 
+ <h3 class="fresh-j">Healthy drinks</h3>
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem impedit architecto, ipsum suscipit vero sapiente, odio numquam consequatur neque optio repellendus velit aut quia voluptate maxime ut dolores quae. Esse quam nostrum eum, rem illo laboriosam beatae! Voluptate, numquam rem! Quis, doloremque maxime. Iure explicabo quis accusamus atque delectus minima animi, sint accusantium labore necessitatibus ut praesentium corrupti error provident odit perspiciatis neque voluptatem amet nam numquam eum consectetur iusto quae quas. Odio voluptates nemo maxime totam excepturi recusandae similique amet qui quam in, aspernatur veritatis dolorum! Debitis magni officia, tempora enim ut, laudantium accusamus repellat eum ab non odit voluptate pariatur natus quas accusantium? Perspiciatis doloremque eum facere repellendus officiis ab ad cupiditate laborum aliquid culpa, voluptatem nemo optio autem qui possimus assumenda unde quae nobis atque natus illo et error ipsam! Vel nulla ullam ipsa reiciendis provident fugiat eum corrupti ipsam fuga eaque. Corrupti iure laborum libero facilis!</p> 
+ <h3 class="fresh-j">Affordable Prices</h3>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur ipsa blanditiis quisquam labore non possimus perspiciatis dicta tenetur iusto aliquid incidunt autem numquam, repellendus eveniet quibusdam praesentium quasi delectus ipsam quia, pariatur, officia officiis nobis laboriosam nihil? Commodi nihil iure expedita corporis eligendi velit tempora cupiditate reiciendis suscipit dolores! Adipisci perspiciatis tenetur corporis quidem harum, eveniet corrupti accusamus debitis minus non similique ullam quibusdam! Nesciunt, nobis similique repudiandae corporis voluptate dolorum nostrum iure doloremque dolor explicabo ipsam ratione sequi. Reiciendis aliquid possimus, exercitationem quibusdam eos cumque ducimus laudantium esse, eligendi autem optio sed dolore ea omnis doloribus recusandae ad! Tempore officia accusamus saepe provident dolorem delectus omnis ducimus iusto? Veritatis dignissimos odio provident corporis corrupti explicabo adipisci doloribus rem cumque fugiat alias aliquid porro quas et officia doloremque, minus optio voluptate nihil earum esse aut ad. Unde molestiae dicta, tempore delectus culpa qui quibusdam. Mollitia voluptates eum saepe odio doloremque.</p> <br>
+
+ <p>Tasty Fruit Juice Options:</p>
+ <div>
+ <ul>
+<li class="jamba-j green-c" >Mango</li>
+<li class="jamba-j" >Strawberry</li>
+<li class="jamba-j green-c" >Apple</li>
+<li class="jamba-j" >Pineapple</li>
+<li class="jamba-j green-c" >Orange</li>
+<li class="jamba-j" >Pomegranate</li>
+<li class="jamba-j green-c" >Grape</li>
+<li class="jamba-j">Peach</li>
+</div>
+</ul>
+
+<form action="">
+<label for="">Click in the box to See Awesomeness</label>
+<input type="text" name="" id="box-large" value="You are Awesome">
+
+</form>
+
+<div>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, culpa omnis dignissimos sapiente consequatur numquam odit. Qui molestias reiciendis dolores, dicta, nisi quibusdam aliquid facere aut mollitia tempora molestiae explicabo!</p>
+  <p>Largest Fruit Juice Chain in Asia</p>
+<ul>
+ <li class="sibling">To know more about awesome colors on this website <a target="_blank" class="just-a-l" href="https://uicolorpicker.com/">Click Here</a></li>
+ <li>Over 8000000 satisfied customers</li>
+ 
+
+</ul>
+
+
+</div>
+
+<div>
+
+<ol>
+  <li>Just a test list item</li>
+  <li>Another test list item</li>
+  <li>List Item a</li>
+  <li>List Item b</li>
+  <li>List Item c</li>
+  <li>List Itme d</li>
+  <li>List Item e</li>
+  <li>List Item f</li>
+</ol>
+
+</div>
+
+<div>
+  
+<li>For more details visit your nearest store</li>
+
+
+</div>
+</body>
+</html>
