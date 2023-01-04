@@ -1,0 +1,539 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --tomato: #f4694c;
+  --gray: #776769;
+  --white: #ffffff;
+  --black: #000308;
+  --ligh-black: rgba(0, 0, 0, 0.438);
+  --light-pink: #fde1db;
+  --medium-black: #080808c0;
+  --blue-dark: #000611;
+  --red: #ce1919;
+}
+
+.btn{
+  text-decoration: none;
+  font-family: sans-serif;
+  color: var(--gray);
+  padding: 1em 2em;
+}
+
+.fill-btn{
+  background: linear-gradient(to right, transparent, transparent);
+  position: relative;
+  z-index: 2;
+  outline: 1px solid var(--white);
+  color: var(--white);
+}
+
+/* .fill-btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--tomato);
+  z-index: -2;
+  transform: scaleX(0);
+  transform-origin: left;
+    
+ }
+ .fill-btn:hover::before {
+  transform: scaleX(1);
+} */
+
+.heading{
+  text-align: center;
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+body{
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  background-image: url(./Assets/Photos/futuristic-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  padding-bottom: 3em;
+
+}
+
+nav{
+  padding: 2em 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.list-items{
+  display: flex;
+  list-style: none;
+  gap: 3em;
+  color: var(--white);
+  cursor:pointer;
+  flex-wrap: wrap;
+}
+
+.btn-container{
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sign-up-btn{
+  background-color: var(--tomato);
+  color: var(--white);
+}
+
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.hero-left{
+  display: flex;
+  flex-direction: column;
+  gap: 3em ;
+  padding: 2em 4em;
+}
+
+.hero-heading{
+  font-size: 2.5rem;
+}
+
+.hero-heading > h1{
+  padding: 5px 0;
+}
+
+.para > p{
+  color: var(--gray);
+}
+
+.para > p{
+  padding: 4px 0;
+}
+
+.hero-btn-container{
+  display: flex;
+  gap: 2em;
+}
+
+.get-started-btn{
+  background-color: var(--tomato);
+  color: var(--white);
+  padding: 1em 2em;
+  outline: 1px solid var(--tomato);
+}
+
+.hero-right{
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.title-container{
+  display: flex;
+
+}
+
+.title{
+  position: relative;
+}
+
+.line{
+  height: 2px;
+  width: 3rem;
+  background-color: var(--white);
+  position: absolute;
+  top: 1rem;
+  left: -4rem;
+}
+
+.title > p {
+  padding: 8px 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.right-arrow {
+  align-self: flex-end;
+}
+
+
+.popular-war-games{
+  padding: 7rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.game-card-container{
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+  flex-wrap: wrap;
+
+}
+
+.card{
+  min-height: 300px;
+  width: 280px;
+  display: flex;
+  align-items: flex-end;
+  color: var(--white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -12rem 0;
+  cursor: pointer;
+  
+}
+
+.card1 {
+  background-image: url("./Assets/Photos/image\ 2.png");
+}
+.card2 {
+  background-image: url("./Assets/Photos/image\ 3.png");
+  background-position: -6rem 0;
+}
+.card3 {
+  background-image: url("./Assets/Photos/image\ 4.png");
+  background-position: -9rem 0;
+}
+.card4 {
+  background-image: url("./Assets/Photos/Rectangle\ 56.png");
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  padding: 0.8em 1em;
+  gap: 2em;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  width: 100%;
+}
+
+.games-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.games-detail > h3 {
+  font-size: 1rem;
+}
+
+.games-detail > p {
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+.download-btn {
+  background-color: var(--tomato);
+  padding: 7px 10px;
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.explore-section{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 7rem 1em;
+  flex-wrap: wrap;
+}
+
+.explore-left-content{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.explore-left-content > img{
+  width: 100%;
+  min-width: 28px;
+  max-width: 600px;
+  height: 100%;
+  max-height: 350px;
+  min-height: 150px;
+  
+}
+
+.explore-btn-container{
+  display: flex;
+  gap: 2em;
+}
+
+.explore-btn{
+  background-color: var(--tomato);
+  color: var(--white);
+  border: none;
+}
+
+.explore-btn-container > .fill-btn{
+  color: var(--tomato);
+  outline: 1px solid var(--tomato);
+  border: none;
+  z-index: 3;
+}
+
+.explore-right-content{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.explore-right-content > .heading {
+  text-align: start;
+  font-size: 1.5rem;
+}
+.explore-right-content > .para {
+  font: 0.8rem;
+}
+
+.recommendation{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5em 4em;
+  gap: 3em;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.top > .heading{
+  font-size: 1.5rem;
+}
+
+.top > .btn-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top > .btn-container > .btn{
+  padding: 1em;
+}
+
+.top > .btn-container > .arrow-left {
+  background-color: var(--light-pink);
+  border: none;
+}
+
+.top > .btn-container > .arrow-right{
+  background-color: var(--tomato);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  padding: 1.2em 0.5em;
+  border: none;
+}
+
+.top > .btn-container > .arrow-right > img {
+  width: 1.8rem;
+  
+}
+
+.recom-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+.recom-card{
+  display: flex;
+  gap: 2em;
+  width: 40%;
+  min-width: 500px;
+  cursor: pointer;
+}
+
+.recom-card > img {
+  width: 20%;
+  min-width: 200px;
+}
+
+.recom-card-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.head-text{
+  font-size: 1.2rem;
+}
+
+.head-text > h3{
+  padding: 3px 0;
+}
+
+.mid-text{
+  color: var(--tomato);
+}
+
+.recom-card-details > .para {
+  font-size: 0.9rem;
+}
+.recom-card-details > .btn {
+  padding: 1em 2em;
+  border: none;
+}
+
+.most-played-games-section{
+  padding: 4em 6em 4em 0;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  position: relative;
+  z-index: 1;
+}
+
+
+.most-played-games-section > .heading{
+  color: var(--white);
+}
+
+.most-played-games-section > .para{
+  font-size: 0.9rem;
+  align-self: flex-end;
+  padding: 2em 6em;
+}
+
+.game-of-the-world{
+  align-self: flex-end;
+  position: absolute;
+  right: 0em;
+  top: 40%;
+  z-index: -1;
+}
+
+.most-played-games{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+.most-played-games > img{
+  max-width: 400px;
+  min-width: 250px;
+}
+
+.image-1{
+  width: 30%;
+  position: relative;
+  top: -5rem;
+}
+
+.image-2 {
+  width: 20%;
+  align-self: flex-end;
+}
+.image-3 {
+  width: 20%;
+  align-self: flex-end;
+}
+
+.get-started-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 6em 4em;
+  background: url(./Assets/Photos/Rectangle\ 606.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--medium-black);
+  background-blend-mode: darken;
+  color: var(--white);
+}
+
+.get-started-section > .para{
+  text-align: center;
+}
+
+.get-started-section > .btn{
+  padding: 1em 2em;
+  font-size: 1rem;
+  border: none;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  background-color: var(--black);
+  padding-top: 4em;
+}
+
+.footer-main{
+  display: flex;
+  justify-content: space-around;
+  color: var(--white);
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.footer-items{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none ;
+  gap: 1em;
+  font-size: 1em;
+  font-size: 0.9rem;
+}
+.social-media-icons {
+  display: flex;
+  gap: 1em;
+}
+
+.social-media > img {
+  width: 8rem;
+}
+
+.footer-items > li {
+  color: var(--gray);
+  cursor: pointer;
+}
